@@ -13,7 +13,7 @@
     "dev": "parallelshell 'NODE_ENV=development nodemon .' 'npm run watch:scss' 'npm run watch:js' 'npm run watch:translations'",
     "watch:scss": "nodemon -e scss -x 'npm run sass'",
     "watch:js": "nodemon --watch assets/js -x 'npm run browserify'",
-    "watch:translations": "nodemon --watch apps/my_awesome_form/translations/src -x 'npm run hof-transpile'",
+    "watch:translations": "nodemon --watch apps/global_entry/translations/src -x 'npm run hof-transpile'",
     "test": "NODE_ENV=test mocha",
     "browserify": "browserify ./assets/js/index.js > ./public/js/bundle.js",
     "test:acceptance": "cd acceptance_tests/; bundle install && cucumber",

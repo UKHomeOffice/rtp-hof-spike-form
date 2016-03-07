@@ -1,6 +1,7 @@
 # Compiled files
 apps/**/translations/en
 public
+node_modules
 
 # Logs
 logs

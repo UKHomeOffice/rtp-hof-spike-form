@@ -19,11 +19,15 @@ router.use(mixins(fields, {
   translate: i18n.translate.bind(i18n)
 }));
 
-router.use('/my-awesome-form/', wizard(require('./steps'), fields, {
+router.use('/register-to-apply/', wizard(require('./steps'), fields, {
   controller: BaseController,
   templatePath: path.resolve(__dirname, 'views'),
   translate: i18n.translate.bind(i18n),
   params: '/:action?'
 }));
+
+router.use('/', function(req, res){
+  res.redirect('/register-to-apply');
+});
 
 module.exports = router;

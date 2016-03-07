@@ -84,7 +84,7 @@ app.use(secureCookies);
 app.use(initSession);
 
 // apps
-app.use(require('./apps/my_awesome_form/'));
+app.use(require('./apps/global_entry/'));
 
 app.get('/cookies', function renderCookies(req, res) {
   res.render('cookies');
