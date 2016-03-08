@@ -5,10 +5,10 @@ module.exports = {
     validate: ['required'],
     className: ['inline', 'form-group'],
     options: [{
-      value: 'Yes',
+      value: 'yes',
       label: 'Yes',
     }, {
-      value: 'No',
+      value: 'np',
       label: 'No'
     }]
   }

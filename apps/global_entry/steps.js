@@ -10,14 +10,32 @@ module.exports = {
     fields: [
       'british-citizen-radio'
     ],
-    next: '/second-page'
+    next: '/second-page',
+    forks: [{
+      target: '/exit-page',
+      condition: {
+        field: 'british-citizen-radio',
+        value: 'no'
+      }
+    }]
   },
   '/second-page': {
     template: 'second-page',
     fields: [
       'passport-number',
     ],
-    next: '/third-page'
+    next: '/third-page',
+    forks: [{
+      target: '/exit-page',
+      condition: {
+        field: 'passport-number',
+        value: '123'
+      }
+    }]
+  },
+  '/exit-page': {
+    template: 'exit-page',
+    clearSession: true
   },
   '/third-page': {
     template: 'third-page',
