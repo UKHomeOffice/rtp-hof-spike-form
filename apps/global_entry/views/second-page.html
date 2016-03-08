@@ -1,9 +1,5 @@
 {{<layout}}
-{{$step}}Step {{#t}}pages.second-page.section{{/t}} of {{#t}}pages.total-pages{{/t}}{{/step}}
-
-{{$journeyHeader}}
-{{#t}}journey.header{{/t}}
-{{/journeyHeader}}
+{{$step}}Section {{#t}}pages.second-page.section{{/t}} of {{#t}}pages.total-pages{{/t}}{{/step}}
 
 {{$validationSummary}}
 {{> partials-validation-summary}}
@@ -21,7 +17,11 @@
 
 {{$form}}
 
-{{#radio-group}}passportNationality{{/radio-group}}
+{{#radio-group}}criminalConviction{{/radio-group}}
+
+{{#radio-group}}refusedEntry{{/radio-group}}
+
+{{#radio-group}}customsPenalties{{/radio-group}}
 
 {{#input-submit}}continue{{/input-submit}}
 {{/form}}

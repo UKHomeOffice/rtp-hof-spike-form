@@ -2,6 +2,15 @@
   "passportNationality": {
     "required": "Please confirm if it says British citizen on your passport"
   },
+  "criminalConviction": {
+    "required": "Tell us if you have ever been convicted of a criminal offence or had a civil judgement or immigration penalty against you or been cautioned by the police. You don’t need to tell us about motoring fines or penalty points unless they were court imposed"
+  },
+  "refusedEntry": {
+    "required": "Tell us if you have ever been refused travel from the UK or had restrictions imposed on your travel"
+  },
+  "customsPenalties": {
+    "required": "Tell us if you ever had action or penalties taken against you for breaking UK customs laws or regulations"
+  },
   "passportNumber": {
     "required": "Tell us your passport number",
     "numeric": "The length of the passport number should be 9 numeric characters"

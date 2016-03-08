@@ -26,7 +26,7 @@ module.exports = {
       'refusedEntry',
       'customsPenalties'
     ],
-    next: '/second-page',
+    next: '/third-page',
   },
   '/third-page': {
     controller: require('./controllers/third-page'),
@@ -38,7 +38,7 @@ module.exports = {
       'passportExpiry-month',
       'passportExpiry-year',
     ],
-    next: '/third-page',
+    next: '/fourth-page',
   },
   '/exit-page': {
     template: 'exit-page',
