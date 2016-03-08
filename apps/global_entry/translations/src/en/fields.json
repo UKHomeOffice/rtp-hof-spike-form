@@ -1,10 +1,24 @@
 {
-  "british-citizen-radio": {
+  "passportNationality": {
     "legend": "You can only register if it says ‘British citizen’ in the nationality section of your passport."
   },
-  "passport-number": {
+  "passportNumber": {
     "legend": "Enter passport number",
     "label": "Enter passport number"
+  },
+  "passportExpiry": {
+    "label": "Date",
+    "legend": "Date on the letter",
+    "hint": "For example, 11  6  2019"
+  },
+  "passportExpiry-day": {
+    "label": "Day"
+  },
+  "passportExpiry-month": {
+    "label": "Month"
+  },
+  "passportExpiry-year": {
+    "label": "Year"
   },
   "alias-yes-no": {
     "legend": "Have you ever been officially or legally known by another name?",

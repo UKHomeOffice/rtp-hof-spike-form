@@ -8,30 +8,28 @@ module.exports = {
   '/first-page': {
     template: 'first-page',
     fields: [
-      'british-citizen-radio'
+      'passportNationality'
     ],
     next: '/second-page',
     forks: [{
       target: '/exit-page',
       condition: {
-        field: 'british-citizen-radio',
+        field: 'passportNationality',
         value: 'no'
       }
     }]
   },
   '/second-page': {
+    controller: require('./controllers/second-page'),
     template: 'second-page',
     fields: [
-      'passport-number',
+      'passportNumber',
+      'passportExpiry',
+      'passportExpiry-day',
+      'passportExpiry-month',
+      'passportExpiry-year',
     ],
     next: '/third-page',
-    forks: [{
-      target: '/exit-page',
-      condition: {
-        field: 'passport-number',
-        value: '123'
-      }
-    }]
   },
   '/exit-page': {
     template: 'exit-page',

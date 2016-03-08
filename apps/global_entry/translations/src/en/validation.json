@@ -2,7 +2,7 @@
   "british-citizen-radio": {
     "required": "Please confirm if it says British citizen on your passport"
   },
-  "passport-number": {
+  "passportNumber": {
     "required": "Tell us your passport number",
     "numeric": "The length of the passport number should be 9 numeric characters"
   },

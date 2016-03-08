@@ -1,11 +1,11 @@
 'use strict';
 
 module.exports = {
-  'british-citizen-radio': {
+  'passportNationality': {
     validate: ['required'],
     className: ['inline', 'form-group'],
     options: [{
-      value: 'yes',
+      value: 'GBR',
       label: 'Yes',
     }, {
       value: 'np',

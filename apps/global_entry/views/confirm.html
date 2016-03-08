@@ -27,20 +27,27 @@
     </thead>
     <tbody>
     <tr>
-        <td>{{#t}}pages.confirm.table.headers.british-citizen-radio{{/t}}</td>
+        <td>{{#t}}pages.confirm.table.headers.passportNationality{{/t}}</td>
         <td>
-            {{values.british-citizen-radio}}
+            {{#t}}pages.confirm.nationality{{/t}}
         </td>
-        <td><a href="first-page/edit#british-citizen-radio" class="button" id="example-radio-change">{{#t}}buttons.change{{/t}}</a></td>
+        <td><a href="first-page/edit#passportNationality" class="button" id="passportNationality-change">{{#t}}buttons.change{{/t}}</a></td>
     </tr>
     </thead>
     <tbody>
     <tr>
-        <td>{{#t}}pages.confirm.table.headers.passport-number{{/t}}</td>
+        <td>{{#t}}pages.confirm.table.headers.passportNumber{{/t}}</td>
         <td>
-            {{values.passport-number}}
+            {{values.passportNumber}}
         </td>
-        <td><a href="second-page/edit#passport-number" class="button">{{#t}}buttons.change{{/t}}</a></td>
+        <td><a href="second-page/edit#passportNumber" class="button">{{#t}}buttons.change{{/t}}</a></td>
+    </tr>
+    <tr>
+        <td>{{#t}}pages.confirm.table.headers.passportExpiry{{/t}}</td>
+        <td>
+            {{values.passportExpiry-formatted}}
+        </td>
+        <td><a href="second-page/edit#passportExpiry" class="button">{{#t}}buttons.change{{/t}}</a></td>
     </tr>
     <tr>
         <td>{{#t}}pages.confirm.table.headers.alias-yes-no{{/t}}</td>

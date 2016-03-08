@@ -5,6 +5,7 @@
   },
   "second-page": {
     "header": "Passport number",
+    "expiry-question": "When does your passport expire?",
     "section": "2"
   },
   "third-page": {
@@ -14,12 +15,14 @@
   "confirm": {
     "table": {
       "headers": {
-        "british-citizen-radio": "Passport nationality",
-        "passport-number": "Passport number",
+        "passportNationality": "Passport nationality",
+        "passportNumber": "Passport number",
+        "passportExpiry": "Expiry date",
         "alias-yes-no": "Full name",
         "additional-alias": "Other names"
       }
     },
-    "section": "Summary"
+    "section": "Summary",
+    "nationality": "British citizen"
   }
 }

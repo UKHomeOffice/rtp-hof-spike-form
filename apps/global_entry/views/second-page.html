@@ -21,7 +21,19 @@
 
 {{$form}}
 
-{{#input-text}}passport-number{{/input-text}}
+{{#input-text}}passportNumber{{/input-text}}
+
+{{#errors.passportExpiry}}
+<span id="example-dob-error" class="error-message">
+              {{errors.passportExpiry.message}}
+            </span>
+{{/errors.passportExpiry}}
+
+<div class="form-group form-date">
+    <p>{{#t}}pages.second-page.expiry-question{{/t}}</p>
+    <p class="form-hint">{{#t}}fields.passportExpiry.hint{{/t}}</p>
+    {{#input-date}}passportExpiry{{/input-date}}
+</div>
 
 {{#input-submit}}continue{{/input-submit}}
 {{/form}}
