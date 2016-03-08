@@ -52,6 +52,18 @@ module.exports = {
       'otherNames',
       'additional-alias'
     ],
+    next: '/fifth-page',
+  },
+  '/fifth-page': {
+    controller: require('./controllers/fifth-page'),
+    template: 'fifth-page',
+    fields: [
+      'dateOfBirth',
+      'dateOfBirth-day',
+      'dateOfBirth-month',
+      'dateOfBirth-year',
+      'gender'
+    ],
     next: '/confirm'
   },
   '/confirm': {

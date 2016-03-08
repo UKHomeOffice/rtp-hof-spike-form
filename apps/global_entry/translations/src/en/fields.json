@@ -44,5 +44,22 @@
   "additional-alias": {
     "legend": "Your other name",
     "label": "Additional alias"
+  },
+  "dateOfBirth": {
+    "label": "Date",
+    "legend": "Date on the letter",
+    "hint": "For example, 11  6  1980"
+  },
+  "gender": {
+    "legend": "What is your gender as it is written in your passport?"
+  },
+  "dateOfBirth-day": {
+    "label": "Day"
+  },
+  "dateOfBirth-month": {
+    "label": "Month"
+  },
+  "dateOfBirth-year": {
+    "label": "Year"
   }
 }
