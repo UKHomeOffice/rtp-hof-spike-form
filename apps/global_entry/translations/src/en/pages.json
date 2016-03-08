@@ -4,7 +4,7 @@
     "section": "1"
   },
   "second-page": {
-    "header": "Passport number",
+    "header": "What is your passport number?",
     "expiry-question": "When does your passport expire?",
     "section": "2"
   },

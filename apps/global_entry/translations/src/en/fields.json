@@ -3,8 +3,7 @@
     "legend": "You can only register if it says ‘British citizen’ in the nationality section of your passport."
   },
   "passportNumber": {
-    "legend": "Enter passport number",
-    "label": "Enter passport number"
+    "label": "What is your passport number"
   },
   "passportExpiry": {
     "label": "Date",
