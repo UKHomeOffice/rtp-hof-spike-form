@@ -6,24 +6,16 @@ module.exports = {
     next: '/first-page'
   },
   '/first-page': {
-    controller: require('./controllers/first-page'),
     template: 'first-page',
     fields: [
-      'example-radio',
-      'example-dob',
-      'example-dob-day',
-      'example-dob-month',
-      'example-dob-year',
-      'example-text',
-      'example-email'
+      'british-citizen-radio'
     ],
     next: '/second-page'
   },
   '/second-page': {
     template: 'second-page',
     fields: [
-      'yes-no-radio-toggler',
-      'example-toggled-text'
+      'passport-number',
     ],
     next: '/third-page'
   },

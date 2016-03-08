@@ -1,4 +1,11 @@
 {
+  "british-citizen-radio": {
+    "legend": "You can only register if it says ‘British citizen’ in the nationality section of your passport."
+  },
+  "passport-number": {
+    "legend": "Enter passport number",
+    "label": "Enter passport number"
+  },
   "example-dob": {
     "label": "Date",
     "legend": "Date on the letter",
