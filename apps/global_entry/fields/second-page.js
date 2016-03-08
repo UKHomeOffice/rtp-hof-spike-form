@@ -2,7 +2,7 @@
 
 module.exports = {
   'passport-number': {
-    validate: ['required'],
+    validate: ['required', 'numeric'],
     label: 'fields.passport-number.label'
   }
 };

@@ -1,22 +1,23 @@
 'use strict';
 
 module.exports = {
-  'yes-no-radio': {
+  'alias-yes-no': {
     validate: ['required'],
     className: ['inline', 'form-group'],
     options: [{
       value: 'Yes',
-      label: 'Yes'
+      label: 'Yes',
+      toggle: 'additional-alias'
     }, {
       value: 'No',
       label: 'No'
     }]
   },
-  'example-depends-on-text': {
+  'additional-alias': {
     validate: ['required'],
-    legend: 'fields.toggled-text.legend',
+    legend: 'fields.additional-alias.legend',
     dependent: {
-      field: 'yes-no-radio',
+      field: 'alias-yes-no',
       value: 'Yes'
     }
   }

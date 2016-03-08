@@ -1,5 +1,4 @@
 {{<layout}}
-{{$step}}Step 3 of 3{{/step}}
 
 {{$journeyHeader}}
 {{#t}}journey.header{{/t}}
@@ -13,8 +12,6 @@
 {{> partials-navigation}}
 {{/propositionHeader}}
 
-{{$header}}{{#t}}pages.fourth-page.header{{/t}}{{/header}}
-
 {{$content}}
 
 {{<partials-form}}
@@ -22,11 +19,10 @@
 {{$form}}
 
 
-<h1>This text input has some custom validation on it</h1>
-<p>You will see the custom validation is performed in the controller for this page</p>
-{{#input-text}}multiples-input{{/input-text}}
+<h1>You can't join Global Entry</h1>
+<p>You can only register to apply for Global Entry if it says ‘British citizen’ in the nationality section of your passport.</p>
+<p>You can still enter the US using normal channels.</p>
 
-{{#input-submit}}continue{{/input-submit}}
 {{/form}}
 
 {{/partials-form}}

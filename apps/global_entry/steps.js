@@ -22,20 +22,15 @@ module.exports = {
   '/third-page': {
     template: 'third-page',
     fields: [
-      'yes-no-radio',
-      'example-depends-on-text'
+      'alias-yes-no',
+      'additional-alias'
     ],
-    next: '/fourth-page'
-  },
-  '/fourth-page': {
-    controller: require('./controllers/fourth-page'),
-    template: 'fourth-page',
-    fields: ['multiples-input'],
     next: '/confirm'
   },
   '/confirm': {
     controller: require('./controllers/confirm'),
     template: 'confirm.html',
+    backLink: false,
     next: '/confirmation'
   },
   '/confirmation': {

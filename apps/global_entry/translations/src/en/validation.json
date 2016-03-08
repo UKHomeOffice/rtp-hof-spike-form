@@ -1,24 +1,15 @@
 {
-  "example-radio": {
-    "required": "Tell us which is your favourite superhero"
+  "british-citizen-radio": {
+    "required": "Please confirm if it says British citizen on your passport"
   },
-  "example-dob": {
-    "required": "Enter the superhero's date of birth",
-    "numeric": "Date must only contain numbers",
-    "future": "The date is in the future",
-    "format": "Enter the collection date in the correct format"
+  "passport-number": {
+    "required": "Tell us your passport number",
+    "numeric": "The length of the passport number should be 9 numeric characters"
   },
-  "example-text": {
-    "required": "Enter your favourite colour"
+  "alias-yes-no": {
+    "required": "Tell us if you’ve ever been officially or legally known by another name"
   },
-  "example-email": {
-    "required": "Enter an email address",
-    "email": "The email address isn't valid, enter a valid email address"
-  },
-  "example-depends-on-text": {
-    "required": "Input the name of your pet dog"
-  },
-  "multiples-input": {
-    "multipleError": "That isn't a multiple of 3, try again!"
+  "additional-alias": {
+    "required": "Tell us the name you used to be known by"
   }
 }

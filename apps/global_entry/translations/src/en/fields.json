@@ -6,50 +6,12 @@
     "legend": "Enter passport number",
     "label": "Enter passport number"
   },
-  "example-dob": {
-    "label": "Date",
-    "legend": "Date on the letter",
-    "hint": "For example, 11  6  2015"
+  "alias-yes-no": {
+    "legend": "Have you ever been officially or legally known by another name?",
+    "label": "For example, you have changed your name by marriage or deed poll"
   },
-  "example-dob-day": {
-    "label": "Day"
-  },
-  "example-dob-month": {
-    "label": "Month"
-  },
-  "example-dob-year": {
-    "label": "Year"
-  },
-  "example-radio": {
-    "legend": "What is your favourite superhero?",
-    "options": {
-      "superman": {
-        "label": "Superman"
-      },
-      "batman": {
-        "label": "Batman"
-      },
-      "spiderman": {
-        "label": "Spiderman"
-      }
-    }
-  },
-  "example-text": {
-    "label": "What is your favourite colour?"
-  },
-  "example-email": {
-    "label": "What is your email address?"
-  },
-  "example-checkbox": {
-    "label": "Please tick if you like cheese"
-  },
-  "example-toggled-text": {
-    "label": "You showed me!!"
-  },
-  "example-depends-on-text": {
-    "label": "What is the name of your pet dog?"
-  },
-  "multiples-input": {
-    "label": "What is your favourite multiple of 3?"
+  "additional-alias": {
+    "legend": "Your other name",
+    "label": "Additional alias"
   }
 }
