@@ -21,7 +21,13 @@
     "past": "The date is in the past",
     "format": "Please enter a valid date in the format: dd mm yyyy"
   },
-  "alias-yes-no": {
+  "surname": {
+    "required": "Tell us your surname, as written in your passport"
+  },
+  "givenName": {
+    "required": "Tell us your given name, as written in your passport"
+  },
+  "otherNames": {
     "required": "Tell us if you’ve ever been officially or legally known by another name"
   },
   "additional-alias": {

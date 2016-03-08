@@ -1,7 +1,15 @@
 'use strict';
 
 module.exports = {
-  'alias-yes-no': {
+  'surname': {
+    validate: ['required'],
+    legend: 'fields.surname.legend'
+  },
+  'givenName': {
+    validate: ['required'],
+    legend: 'fields.givenName.legend'
+  },
+  'otherNames': {
     validate: ['required'],
     className: ['inline', 'form-group'],
     options: [{
@@ -17,7 +25,7 @@ module.exports = {
     validate: ['required'],
     legend: 'fields.additional-alias.legend',
     dependent: {
-      field: 'alias-yes-no',
+      field: 'otherNames',
       value: 'Yes'
     }
   }

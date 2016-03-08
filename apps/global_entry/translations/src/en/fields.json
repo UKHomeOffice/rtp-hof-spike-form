@@ -29,7 +29,15 @@
   "passportExpiry-year": {
     "label": "Year"
   },
-  "alias-yes-no": {
+  "surname": {
+    "legend": "What is your full name as it is written in your passport?",
+    "label": "Surname"
+  },
+  "givenName": {
+    "label": "Given names",
+    "hint": "Include any middle names"
+  },
+  "otherNames": {
     "legend": "Have you ever been officially or legally known by another name?",
     "label": "For example, you have changed your name by marriage or deed poll"
   },

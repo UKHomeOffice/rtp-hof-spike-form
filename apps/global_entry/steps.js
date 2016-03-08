@@ -47,7 +47,9 @@ module.exports = {
   '/fourth-page': {
     template: 'fourth-page',
     fields: [
-      'alias-yes-no',
+      'surname',
+      'givenName',
+      'otherNames',
       'additional-alias'
     ],
     next: '/confirm'

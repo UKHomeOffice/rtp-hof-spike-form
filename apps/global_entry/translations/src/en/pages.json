@@ -22,12 +22,12 @@
         "passportNationality": "Passport nationality",
         "passportNumber": "Passport number",
         "passportExpiry": "Expiry date",
-        "alias-yes-no": "Full name",
+        "otherNames": "Full name",
         "additional-alias": "Other names"
       }
     },
     "section": "Summary",
     "nationality": "British citizen"
   },
-  "total-pages": "4"
+  "total-pages": "6"
 }
