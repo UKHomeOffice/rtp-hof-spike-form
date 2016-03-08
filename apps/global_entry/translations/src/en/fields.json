@@ -2,6 +2,16 @@
   "passportNationality": {
     "legend": "You can only register if it says ‘British citizen’ in the nationality section of your passport."
   },
+  "criminalConviction": {
+    "legend": "Do you have a criminal record in the UK (including police cautions)?",
+    "label": "You don’t need to tell us about motoring fines or penalty points unless these were court imposed."
+  },
+  "refusedEntry": {
+    "legend": "Have you ever been refused or had restrictions imposed on your travel from, or back into, the UK?"
+  },
+  "customsPenalties": {
+    "legend": "Have you ever had action or penalties taken against you for breaking UK customs laws or regulations?"
+  },
   "passportNumber": {
     "label": "What is your passport number"
   },

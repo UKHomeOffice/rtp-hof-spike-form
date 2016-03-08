@@ -1,24 +1,21 @@
 'use strict';
 
 module.exports = {
-  'alias-yes-no': {
-    validate: ['required'],
-    className: ['inline', 'form-group'],
-    options: [{
-      value: 'Yes',
-      label: 'Yes',
-      toggle: 'additional-alias'
-    }, {
-      value: 'No',
-      label: 'No'
-    }]
+  'passportNumber': {
+    validate: ['required', 'numeric']
   },
-  'additional-alias': {
-    validate: ['required'],
-    legend: 'fields.additional-alias.legend',
-    dependent: {
-      field: 'alias-yes-no',
-      value: 'Yes'
-    }
+  'passportExpiry': {
+    validate: ['required', 'numeric'],
+    legend: 'fields.passportExpiry.legend',
+    hint: 'fields.passportExpiry.hint'
+  },
+  'passportExpiry-day': {
+    label: 'fields.passportExpiry-day.label'
+  },
+  'passportExpiry-month': {
+    label: 'fields.passportExpiry-month.label'
+  },
+  'passportExpiry-week': {
+    label: 'fields.passportExpiry-year.label'
   }
 };

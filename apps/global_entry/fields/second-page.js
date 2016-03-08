@@ -1,21 +1,39 @@
 'use strict';
 
 module.exports = {
-  'passportNumber': {
-    validate: ['required', 'numeric']
+  'criminalConviction': {
+    validate: ['required'],
+    className: ['inline', 'form-group'],
+    options: [{
+      value: 'Yes',
+      label: 'Yes',
+    }, {
+      value: 'No',
+      label: 'No'
+    }]
   },
-  'passportExpiry': {
-    validate: ['required', 'numeric'],
-    legend: 'fields.passportExpiry.legend',
-    hint: 'fields.passportExpiry.hint'
+  'refusedEntry': {
+    validate: ['required'],
+    className: ['inline', 'form-group'],
+    options: [{
+      value: 'Yes',
+      label: 'Yes',
+    }, {
+      value: 'No',
+      label: 'No'
+    }]
   },
-  'passportExpiry-day': {
-    label: 'fields.passportExpiry-day.label'
-  },
-  'passportExpiry-month': {
-    label: 'fields.passportExpiry-month.label'
-  },
-  'passportExpiry-week': {
-    label: 'fields.passportExpiry-year.label'
+  'customsPenalties': {
+    validate: ['required'],
+    className: ['inline', 'form-group'],
+    options: [{
+      value: 'Yes',
+      label: 'Yes',
+    }, {
+      value: 'No',
+      label: 'No'
+    }]
   }
 };
+
+

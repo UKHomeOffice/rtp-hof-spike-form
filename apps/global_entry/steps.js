@@ -20,8 +20,17 @@ module.exports = {
     }]
   },
   '/second-page': {
-    controller: require('./controllers/second-page'),
     template: 'second-page',
+    fields: [
+      'criminalConviction',
+      'refusedEntry',
+      'customsPenalties'
+    ],
+    next: '/second-page',
+  },
+  '/third-page': {
+    controller: require('./controllers/third-page'),
+    template: 'third-page',
     fields: [
       'passportNumber',
       'passportExpiry',
@@ -35,8 +44,8 @@ module.exports = {
     template: 'exit-page',
     clearSession: true
   },
-  '/third-page': {
-    template: 'third-page',
+  '/fourth-page': {
+    template: 'fourth-page',
     fields: [
       'alias-yes-no',
       'additional-alias'

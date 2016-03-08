@@ -1,5 +1,5 @@
 {{<layout}}
-{{$step}}Section {{#t}}pages.first-page.section{{/t}} of {{#t}}pages.total-pages{{/t}}{{/step}}
+{{$step}}Step {{#t}}pages.third-page.section{{/t}} of 3{{/step}}
 
 {{$journeyHeader}}
 {{#t}}journey.header{{/t}}
@@ -13,14 +13,17 @@
 {{> partials-navigation}}
 {{/propositionHeader}}
 
-{{$header}}{{#t}}pages.first-page.header{{/t}}{{/header}}
+{{$header}}{{#t}}pages.third-page.header{{/t}}{{/header}}
 
 {{$content}}
 
 {{<partials-form}}
+
 {{$form}}
 
-{{#radio-group}}passportNationality{{/radio-group}}
+
+{{#radio-group}}alias-yes-no{{/radio-group}}
+{{#input-text}}additional-alias{{/input-text}}
 
 {{#input-submit}}continue{{/input-submit}}
 {{/form}}

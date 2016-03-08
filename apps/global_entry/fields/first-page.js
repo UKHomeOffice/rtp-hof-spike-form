@@ -8,7 +8,7 @@ module.exports = {
       value: 'GBR',
       label: 'Yes',
     }, {
-      value: 'np',
+      value: 'No',
       label: 'No'
     }]
   }

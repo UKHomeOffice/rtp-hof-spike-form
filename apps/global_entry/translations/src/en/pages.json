@@ -4,13 +4,17 @@
     "section": "1"
   },
   "second-page": {
-    "header": "What is your passport number?",
-    "expiry-question": "When does your passport expire?",
+    "header": "Restrictions",
     "section": "2"
   },
   "third-page": {
-    "header": "Full name",
+    "header": "What is your passport number?",
+    "expiry-question": "When does your passport expire?",
     "section": "3"
+  },
+  "fourth-page": {
+    "header": "Full name",
+    "section": "4"
   },
   "confirm": {
     "table": {
@@ -24,5 +28,6 @@
     },
     "section": "Summary",
     "nationality": "British citizen"
-  }
+  },
+  "total-pages": "4"
 }

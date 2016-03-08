@@ -1,5 +1,5 @@
 {
-  "british-citizen-radio": {
+  "passportNationality": {
     "required": "Please confirm if it says British citizen on your passport"
   },
   "passportNumber": {
