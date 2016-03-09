@@ -7,5 +7,6 @@ module.exports = _.extend(
   require('./second-page'),
   require('./third-page'),
   require('./fourth-page'),
-  require('./fifth-page')
+  require('./fifth-page'),
+  require('./sixth-page')
 );

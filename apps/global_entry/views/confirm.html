@@ -33,35 +33,68 @@
         </td>
         <td><a href="first-page/edit#passportNationality" class="button" id="passportNationality-change">{{#t}}buttons.change{{/t}}</a></td>
     </tr>
-    </thead>
-    <tbody>
+    <tr>
+        <td>{{#t}}pages.confirm.table.headers.criminalConvictions{{/t}}</td>
+        <td>
+            {{values.criminalConvictions}}
+        </td>
+        <td><a href="second-page/edit#criminalConvictions" class="button">{{#t}}buttons.change{{/t}}</a></td>
+    </tr>
+    <tr>
+        <td>{{#t}}pages.confirm.table.headers.refusedEntry{{/t}}</td>
+        <td>
+            {{values.refusedEntry}}
+        </td>
+        <td><a href="second-page/edit#refusedEntry" class="button">{{#t}}buttons.change{{/t}}</a></td>
+    </tr>
+    <tr>
+        <td>{{#t}}pages.confirm.table.headers.customsPenalties{{/t}}</td>
+        <td>
+            {{values.customsPenalties}}
+        </td>
+        <td><a href="second-page/edit#customsPenalties" class="button">{{#t}}buttons.change{{/t}}</a></td>
+    </tr>
     <tr>
         <td>{{#t}}pages.confirm.table.headers.passportNumber{{/t}}</td>
         <td>
             {{values.passportNumber}}
         </td>
-        <td><a href="second-page/edit#passportNumber" class="button">{{#t}}buttons.change{{/t}}</a></td>
+        <td><a href="third-page/edit#passportNumber" class="button">{{#t}}buttons.change{{/t}}</a></td>
     </tr>
     <tr>
         <td>{{#t}}pages.confirm.table.headers.passportExpiry{{/t}}</td>
         <td>
             {{values.passportExpiry-formatted}}
         </td>
-        <td><a href="second-page/edit#passportExpiry" class="button">{{#t}}buttons.change{{/t}}</a></td>
+        <td><a href="third-page/edit#passportExpiry" class="button">{{#t}}buttons.change{{/t}}</a></td>
     </tr>
     <tr>
-        <td>{{#t}}pages.confirm.table.headers.alias-yes-no{{/t}}</td>
+        <td>{{#t}}pages.confirm.table.headers.fullName{{/t}}</td>
         <td>
-            {{values.alias-yes-no}}
+            {{values.givenName}} {{values.surname}}
         </td>
-        <td><a href="third-page/edit#alias-yes-no" class="button">{{#t}}buttons.change{{/t}}</a></td>
+        <td><a href="fourth-page/edit#givenName" class="button">{{#t}}buttons.change{{/t}}</a></td>
     </tr>
     <tr>
         <td>{{#t}}pages.confirm.table.headers.additional-alias{{/t}}</td>
         <td>
             {{values.additional-alias}}{{^values.additional-alias}}You don’t have any other name{{/values.additional-alias}}
         </td>
-        <td><a href="third-page/edit#additional-alias" class="button">{{#t}}buttons.change{{/t}}</a></td>
+        <td><a href="fourth-page/edit#additional-alias" class="button">{{#t}}buttons.change{{/t}}</a></td>
+    </tr>
+    <tr>
+        <td>{{#t}}pages.confirm.table.headers.dateOfBirth{{/t}}</td>
+        <td>
+            {{values.dateOfBirth-formatted}}
+        </td>
+        <td><a href="fifth-page/edit#dateOfBirth" class="button">{{#t}}buttons.change{{/t}}</a></td>
+    </tr>
+    <tr>
+        <td>{{#t}}pages.confirm.table.headers.email{{/t}}</td>
+        <td>
+            {{values.email}}
+        </td>
+        <td><a href="sixth-page/edit#email" class="button">{{#t}}buttons.change{{/t}}</a></td>
     </tr>
     </tbody>
 </table>

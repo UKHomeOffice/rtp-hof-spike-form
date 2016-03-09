@@ -41,5 +41,9 @@
   },
   "gender" : {
     "required": "Tell us if your passport shows your gender as male or female"
+  },
+  "email": {
+    "required": "Please enter your email address",
+    "match": "Email addresses must match"
   }
 }

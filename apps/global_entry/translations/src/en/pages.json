@@ -25,10 +25,16 @@
     "table": {
       "headers": {
         "passportNationality": "Passport nationality",
+        "criminalConvictions": "UK criminal convictions",
+        "refusedEntry": "UK immigration",
+        "customsPenalties": "UK customs",
         "passportNumber": "Passport number",
         "passportExpiry": "Expiry date",
-        "otherNames": "Full name",
-        "additional-alias": "Other names"
+        "fullName": "Full name",
+        "additional-alias": "Other names",
+        "dateOfBirth": "Date of birth",
+        "gender": "Gender",
+        "email": "Email address"
       }
     },
     "section": "Summary",

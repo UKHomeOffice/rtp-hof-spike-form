@@ -64,6 +64,13 @@ module.exports = {
       'dateOfBirth-year',
       'gender'
     ],
+  //  next: '/sixth-page'
+  //},
+  //'/sixth-page': {
+  //  template: 'sixth-page',
+  //  fields: [
+  //    'email'
+  //  ],
     next: '/confirm'
   },
   '/confirm': {
