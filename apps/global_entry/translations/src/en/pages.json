@@ -21,6 +21,10 @@
     "section": "5",
     "dob-question": "What is your date of birth as it is written in your passport?"
   },
+  "sixth-page": {
+    "header": "Email",
+    "section": "6"
+  },
   "confirm": {
     "table": {
       "headers": {

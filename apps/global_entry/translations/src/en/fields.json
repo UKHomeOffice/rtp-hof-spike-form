@@ -61,5 +61,8 @@
   },
   "dateOfBirth-year": {
     "label": "Year"
+  },
+  "email": {
+    "label": "Give us your email address"
   }
 }
