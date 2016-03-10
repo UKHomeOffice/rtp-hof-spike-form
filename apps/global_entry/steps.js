@@ -15,7 +15,7 @@ module.exports = {
       target: '/exit-page',
       condition: {
         field: 'passportNationality',
-        value: 'no'
+        value: 'No'
       }
     }]
   },
@@ -65,12 +65,12 @@ module.exports = {
       'gender'
     ],
   //  next: '/sixth-page'
-  //},
-  //'/sixth-page': {
-  //  template: 'sixth-page',
-  //  fields: [
-  //    'email'
-  //  ],
+  //  },
+  //  '/sixth-page': {
+  //    template: 'sixth-page',
+  //    fields: [
+  //      'email'
+  //    ],
     next: '/confirm'
   },
   '/confirm': {
