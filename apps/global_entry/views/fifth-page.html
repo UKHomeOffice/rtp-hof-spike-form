@@ -1,5 +1,5 @@
 {{<layout}}
-{{$step}}Section {{#t}}pages.third-page.section{{/t}} of {{#t}}pages.total-pages{{/t}}{{/step}}
+{{$step}}Section {{#t}}pages.fifth-page.section{{/t}} of {{#t}}pages.total-pages{{/t}}{{/step}}
 
 {{$journeyHeader}}
 {{#t}}journey.header{{/t}}
@@ -13,27 +13,25 @@
 {{> partials-navigation}}
 {{/propositionHeader}}
 
-{{$header}}{{#t}}pages.third-page.header{{/t}}{{/header}}
-
 {{$content}}
 
 {{<partials-form}}
 
 {{$form}}
 
-{{#input-text}}passportNumber{{/input-text}}
-
-{{#errors.passportExpiry}}
+{{#errors.dateOfBirth}}
 <span id="passportExpiry-error" class="error-message">
-              {{errors.passportExpiry.message}}
+              {{errors.dateOfBirth.message}}
             </span>
-{{/errors.passportExpiry}}
+{{/errors.dateOfBirth}}
 
 <div class="form-group form-date">
-    <h1>{{#t}}pages.third-page.expiry-question{{/t}}</h1>
-    <p class="form-hint">{{#t}}fields.passportExpiry.hint{{/t}}</p>
-    {{#input-date}}passportExpiry{{/input-date}}
+    <h1>{{#t}}pages.fifth-page.dob-question{{/t}}</h1>
+    <p class="form-hint">{{#t}}fields.dateOfBirth.hint{{/t}}</p>
+    {{#input-date}}dateOfBirth{{/input-date}}
 </div>
+
+{{#radio-group}}gender{{/radio-group}}
 
 {{#input-submit}}continue{{/input-submit}}
 {{/form}}

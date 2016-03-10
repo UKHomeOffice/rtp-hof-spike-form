@@ -26,7 +26,7 @@ router.use('/register-to-apply/', wizard(require('./steps'), fields, {
   params: '/:action?'
 }));
 
-router.use('/', function(req, res){
+router.use('/', function redirectUrl(req, res) {
   res.redirect('/register-to-apply');
 });
 

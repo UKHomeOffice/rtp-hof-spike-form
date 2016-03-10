@@ -1,24 +1,49 @@
 {
-  "example-radio": {
-    "required": "Tell us which is your favourite superhero"
+  "passportNationality": {
+    "required": "Please confirm if it says British citizen on your passport"
   },
-  "example-dob": {
-    "required": "Enter the superhero's date of birth",
-    "numeric": "Date must only contain numbers",
+  "criminalConviction": {
+    "required": "Tell us if you have ever been convicted of a criminal offence or had a civil judgement or immigration penalty against you or been cautioned by the police. You don’t need to tell us about motoring fines or penalty points unless they were court imposed"
+  },
+  "refusedEntry": {
+    "required": "Tell us if you have ever been refused travel from the UK or had restrictions imposed on your travel"
+  },
+  "customsPenalties": {
+    "required": "Tell us if you ever had action or penalties taken against you for breaking UK customs laws or regulations"
+  },
+  "passportNumber": {
+    "required": "Tell us your passport number",
+    "numeric": "The length of the passport number should be 9 numeric characters"
+  },
+  "passportExpiry": {
+    "required": "Tell us when your passport expires",
+    "numeric": "Please enter a valid date in the format: dd mm yyyy",
+    "past": "The date is in the past",
+    "format": "Please enter a valid date in the format: dd mm yyyy"
+  },
+  "surname": {
+    "required": "Tell us your surname, as written in your passport"
+  },
+  "givenName": {
+    "required": "Tell us your given name, as written in your passport"
+  },
+  "otherNames": {
+    "required": "Tell us if you’ve ever been officially or legally known by another name"
+  },
+  "additional-alias": {
+    "required": "Tell us the name you used to be known by"
+  },
+  "dateOfBirth": {
+    "required": "Tell us your date of birth, as written on your passport",
+    "numeric": "Please enter a valid date in the format: dd mm yyyy",
     "future": "The date is in the future",
-    "format": "Enter the collection date in the correct format"
+    "format": "Please enter a valid date in the format: dd mm yyyy"
   },
-  "example-text": {
-    "required": "Enter your favourite colour"
+  "gender" : {
+    "required": "Tell us if your passport shows your gender as male or female"
   },
-  "example-email": {
-    "required": "Enter an email address",
-    "email": "The email address isn't valid, enter a valid email address"
-  },
-  "example-depends-on-text": {
-    "required": "Input the name of your pet dog"
-  },
-  "multiples-input": {
-    "multipleError": "That isn't a multiple of 3, try again!"
+  "email": {
+    "required": "Please enter your email address",
+    "match": "Email addresses must match"
   }
 }

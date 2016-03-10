@@ -1,5 +1,4 @@
 {{<layout}}
-{{$step}}Section {{#t}}pages.first-page.section{{/t}} of {{#t}}pages.total-pages{{/t}}{{/step}}
 
 {{$journeyHeader}}
 {{#t}}journey.header{{/t}}
@@ -13,16 +12,17 @@
 {{> partials-navigation}}
 {{/propositionHeader}}
 
-{{$header}}{{#t}}pages.first-page.header{{/t}}{{/header}}
-
 {{$content}}
 
 {{<partials-form}}
+
 {{$form}}
 
-{{#radio-group}}passportNationality{{/radio-group}}
 
-{{#input-submit}}continue{{/input-submit}}
+<h1>You can't join Global Entry</h1>
+<p>You can only register to apply for Global Entry if it says ‘British citizen’ in the nationality section of your passport.</p>
+<p>You can still enter the US using normal channels.</p>
+
 {{/form}}
 
 {{/partials-form}}

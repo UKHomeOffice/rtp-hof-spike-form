@@ -1,5 +1,5 @@
 {{<layout}}
-{{$step}}Step 3 of 3{{/step}}
+{{$step}}Step {{#t}}pages.fourth-page.section{{/t}} of {{#t}}pages.total-pages{{/t}}{{/step}}
 
 {{$journeyHeader}}
 {{#t}}journey.header{{/t}}
@@ -13,18 +13,19 @@
 {{> partials-navigation}}
 {{/propositionHeader}}
 
-{{$header}}{{#t}}pages.fourth-page.header{{/t}}{{/header}}
-
 {{$content}}
 
 {{<partials-form}}
 
 {{$form}}
 
+{{#input-text}}surname{{/input-text}}
 
-<h1>This text input has some custom validation on it</h1>
-<p>You will see the custom validation is performed in the controller for this page</p>
-{{#input-text}}multiples-input{{/input-text}}
+{{#input-text}}givenName{{/input-text}}
+
+
+{{#radio-group}}otherNames{{/radio-group}}
+{{#input-text}}additional-alias{{/input-text}}
 
 {{#input-submit}}continue{{/input-submit}}
 {{/form}}

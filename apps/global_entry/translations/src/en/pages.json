@@ -1,33 +1,48 @@
 {
   "first-page": {
-    "header": "This page shows you how to use simple question types",
-    "description": "The next pages will demonstrate more complex features",
-    "dob-question": "What is your date of birth?",
-    "section": "Section 1 of 3"
+    "header": "Are you a British citizen?",
+    "section": "1"
   },
   "second-page": {
-    "header": "This page demonstrates a field that toggles depending on the value of another field"
+    "header": "Restrictions",
+    "section": "2"
   },
   "third-page": {
-    "header": "This page shows how to make a field mandatory depending on the answer to a previous question"
+    "header": "What is your passport number?",
+    "expiry-question": "When does your passport expire?",
+    "section": "3"
   },
   "fourth-page": {
-    "header": "This page demonstrates custom validation"
+    "header": "Full name",
+    "section": "4"
+  },
+  "fifth-page": {
+    "header": "DOB & gender",
+    "section": "5",
+    "dob-question": "What is your date of birth as it is written in your passport?"
+  },
+  "sixth-page": {
+    "header": "Email",
+    "section": "6"
   },
   "confirm": {
     "table": {
       "headers": {
-        "example-dob": "Superhero date of birth",
-        "example-radio": "Example radio button",
-        "example-text": "Favourite colour",
-        "example-email": "Email",
-        "example-checkbox": "Example check box",
-        "yes-no-radio-toggler": "Radio toggler",
-        "example-toggled-text": "Example toggled text",
-        "yes-no-radio": "Yes no radio",
-        "example-depends-on-text": "Example depends on text",
-        "multiples-input": "Favourite multiple"
+        "passportNationality": "Passport nationality",
+        "criminalConvictions": "UK criminal convictions",
+        "refusedEntry": "UK immigration",
+        "customsPenalties": "UK customs",
+        "passportNumber": "Passport number",
+        "passportExpiry": "Expiry date",
+        "fullName": "Full name",
+        "additional-alias": "Other names",
+        "dateOfBirth": "Date of birth",
+        "gender": "Gender",
+        "email": "Email address"
       }
-    }
-  }
+    },
+    "section": "Summary",
+    "nationality": "British citizen"
+  },
+  "total-pages": "6"
 }

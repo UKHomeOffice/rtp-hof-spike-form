@@ -1,23 +1,21 @@
 'use strict';
 
 module.exports = {
-  'yes-no-radio': {
-    validate: ['required'],
-    className: ['inline', 'form-group'],
-    options: [{
-      value: 'Yes',
-      label: 'Yes'
-    }, {
-      value: 'No',
-      label: 'No'
-    }]
+  'passportNumber': {
+    validate: ['required', 'numeric']
   },
-  'example-depends-on-text': {
-    validate: ['required'],
-    legend: 'fields.toggled-text.legend',
-    dependent: {
-      field: 'yes-no-radio',
-      value: 'Yes'
-    }
+  'passportExpiry': {
+    validate: ['required', 'numeric'],
+    legend: 'fields.passportExpiry.legend',
+    hint: 'fields.passportExpiry.hint'
+  },
+  'passportExpiry-day': {
+    label: 'fields.passportExpiry-day.label'
+  },
+  'passportExpiry-month': {
+    label: 'fields.passportExpiry-month.label'
+  },
+  'passportExpiry-week': {
+    label: 'fields.passportExpiry-year.label'
   }
 };

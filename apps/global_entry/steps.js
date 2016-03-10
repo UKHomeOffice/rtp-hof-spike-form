@@ -6,44 +6,77 @@ module.exports = {
     next: '/first-page'
   },
   '/first-page': {
-    controller: require('./controllers/first-page'),
     template: 'first-page',
     fields: [
-      'example-radio',
-      'example-dob',
-      'example-dob-day',
-      'example-dob-month',
-      'example-dob-year',
-      'example-text',
-      'example-email'
+      'passportNationality'
     ],
-    next: '/second-page'
+    next: '/second-page',
+    forks: [{
+      target: '/exit-page',
+      condition: {
+        field: 'passportNationality',
+        value: 'No'
+      }
+    }]
   },
   '/second-page': {
     template: 'second-page',
     fields: [
-      'yes-no-radio-toggler',
-      'example-toggled-text'
+      'criminalConviction',
+      'refusedEntry',
+      'customsPenalties'
     ],
-    next: '/third-page'
+    next: '/third-page',
   },
   '/third-page': {
+    controller: require('./controllers/third-page'),
     template: 'third-page',
     fields: [
-      'yes-no-radio',
-      'example-depends-on-text'
+      'passportNumber',
+      'passportExpiry',
+      'passportExpiry-day',
+      'passportExpiry-month',
+      'passportExpiry-year',
     ],
-    next: '/fourth-page'
+    next: '/fourth-page',
+  },
+  '/exit-page': {
+    template: 'exit-page',
+    clearSession: true
   },
   '/fourth-page': {
-    controller: require('./controllers/fourth-page'),
     template: 'fourth-page',
-    fields: ['multiples-input'],
+    fields: [
+      'surname',
+      'givenName',
+      'otherNames',
+      'additional-alias'
+    ],
+    next: '/fifth-page',
+  },
+  '/fifth-page': {
+    controller: require('./controllers/fifth-page'),
+    template: 'fifth-page',
+    fields: [
+      'dateOfBirth',
+      'dateOfBirth-day',
+      'dateOfBirth-month',
+      'dateOfBirth-year',
+      'gender'
+    ],
+    next: '/sixth-page'
+    },
+    '/sixth-page': {
+      template: 'sixth-page',
+      fields: [
+        'email'
+      ],
     next: '/confirm'
   },
   '/confirm': {
     controller: require('./controllers/confirm'),
     template: 'confirm.html',
+    backLink: false,
     next: '/confirmation'
   },
   '/confirmation': {

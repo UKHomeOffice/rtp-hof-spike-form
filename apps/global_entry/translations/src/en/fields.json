@@ -1,48 +1,68 @@
 {
-  "example-dob": {
+  "passportNationality": {
+    "legend": "You can only register if it says ‘British citizen’ in the nationality section of your passport."
+  },
+  "criminalConviction": {
+    "legend": "Do you have a criminal record in the UK (including police cautions)?",
+    "label": "You don’t need to tell us about motoring fines or penalty points unless these were court imposed."
+  },
+  "refusedEntry": {
+    "legend": "Have you ever been refused or had restrictions imposed on your travel from, or back into, the UK?"
+  },
+  "customsPenalties": {
+    "legend": "Have you ever had action or penalties taken against you for breaking UK customs laws or regulations?"
+  },
+  "passportNumber": {
+    "label": "What is your passport number"
+  },
+  "passportExpiry": {
     "label": "Date",
     "legend": "Date on the letter",
-    "hint": "For example, 11  6  2015"
+    "hint": "For example, 11  6  2019"
   },
-  "example-dob-day": {
+  "passportExpiry-day": {
     "label": "Day"
   },
-  "example-dob-month": {
+  "passportExpiry-month": {
     "label": "Month"
   },
-  "example-dob-year": {
+  "passportExpiry-year": {
     "label": "Year"
   },
-  "example-radio": {
-    "legend": "What is your favourite superhero?",
-    "options": {
-      "superman": {
-        "label": "Superman"
-      },
-      "batman": {
-        "label": "Batman"
-      },
-      "spiderman": {
-        "label": "Spiderman"
-      }
-    }
+  "surname": {
+    "legend": "What is your full name as it is written in your passport?",
+    "label": "Surname"
   },
-  "example-text": {
-    "label": "What is your favourite colour?"
+  "givenName": {
+    "label": "Given names",
+    "hint": "Include any middle names"
   },
-  "example-email": {
-    "label": "What is your email address?"
+  "otherNames": {
+    "legend": "Have you ever been officially or legally known by another name?",
+    "label": "For example, you have changed your name by marriage or deed poll"
   },
-  "example-checkbox": {
-    "label": "Please tick if you like cheese"
+  "additional-alias": {
+    "legend": "Your other name",
+    "label": "Additional alias"
   },
-  "example-toggled-text": {
-    "label": "You showed me!!"
+  "dateOfBirth": {
+    "label": "Date",
+    "legend": "Date on the letter",
+    "hint": "For example, 11  6  1980"
   },
-  "example-depends-on-text": {
-    "label": "What is the name of your pet dog?"
+  "gender": {
+    "legend": "What is your gender as it is written in your passport?"
   },
-  "multiples-input": {
-    "label": "What is your favourite multiple of 3?"
+  "dateOfBirth-day": {
+    "label": "Day"
+  },
+  "dateOfBirth-month": {
+    "label": "Month"
+  },
+  "dateOfBirth-year": {
+    "label": "Year"
+  },
+  "email": {
+    "label": "Give us your email address"
   }
 }
