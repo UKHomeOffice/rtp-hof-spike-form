@@ -10,7 +10,7 @@ module.exports = {
     fields: [
       'passportNationality'
     ],
-    next: '/second-page',
+    next: '/restrictions',
     forks: [{
       target: '/exit-page',
       condition: {
@@ -19,14 +19,35 @@ module.exports = {
       }
     }]
   },
-  '/second-page': {
-    template: 'second-page',
+  '/restrictions': {
+    template: 'restrictions',
     fields: [
       'criminalConviction',
       'refusedEntry',
       'customsPenalties'
     ],
     next: '/third-page',
+    forks: [{
+      target: '/exit-page',
+      condition: {
+        field: 'criminalConviction',
+        value: 'No'
+      }
+    }, {
+      target: '/exit-page',
+      condition: {
+        field: 'refusedEntry',
+        value: 'No'
+      }
+    },
+      {
+        target: '/exit-page',
+        condition: {
+          field: 'customsPenalties',
+          value: 'No'
+        }
+      }
+    ]
   },
   '/third-page': {
     controller: require('./controllers/third-page'),
@@ -36,9 +57,9 @@ module.exports = {
       'passportExpiry',
       'passportExpiry-day',
       'passportExpiry-month',
-      'passportExpiry-year',
+      'passportExpiry-year'
     ],
-    next: '/fourth-page',
+    next: '/fourth-page'
   },
   '/exit-page': {
     template: 'exit-page',

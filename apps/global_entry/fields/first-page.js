@@ -6,7 +6,7 @@ module.exports = {
     className: ['inline', 'form-group'],
     options: [{
       value: 'GBR',
-      label: 'Yes',
+      label: 'Yes'
     }, {
       value: 'No',
       label: 'No'
