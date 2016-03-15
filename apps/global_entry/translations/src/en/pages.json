@@ -1,11 +1,11 @@
 {
   "first-page": {
     "header": "Are you a British citizen?",
-    "section": "1"
+    "section": "Section 1"
   },
-  "second-page": {
+  "restrictions": {
     "header": "Restrictions",
-    "section": "2"
+    "section": "Section 2"
   },
   "third-page": {
     "header": "What is your passport number?",
@@ -44,5 +44,5 @@
     "section": "Summary",
     "nationality": "British citizen"
   },
-  "total-pages": "6"
+  "total-pages": "of 6"
 }
