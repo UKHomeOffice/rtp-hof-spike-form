@@ -1,0 +1,52 @@
+{{<layout}}
+{{$step}} {{#t}}pages.passportNationality.section{{/t}} {{#t}}pages.total-pages{{/t}}{{/step}}
+
+{{$journeyHeader}}
+{{#t}}journey.header{{/t}}
+{{/journeyHeader}}
+
+{{$validationSummary}}
+{{> partials-validation-summary}}
+{{/validationSummary}}
+
+{{$propositionHeader}}
+{{> partials-navigation}}
+{{/propositionHeader}}
+
+{{$content}}
+
+{{<partials-form}}
+{{$form}}
+
+<fieldset id="passportNationality-group" class="inline form-group {{#error}}validation-error{{/error}}">
+    <legend>
+        {{#error}}<span id="passportNationality-error" class="error-message">{{error.message}}</span>{{/error}}
+        <span id="nationality-question" class="heading-medium">Are you a British Citizen?</span>
+        <span id="nationality-hint" class="newLine">You can only register if it says ‘British
+        citizen’ in the nationality section of your passport.</span>
+    </legend>
+    <label class="block-label" for="passportNationality-GBR">
+        <input
+                type="radio"
+                name="passportNationality"
+                id="passportNationality-GBR"
+                value="GBR"
+                aria-required="true"
+                {{^error}}{{#hint}} aria-describedby="passportNationality-hint"{{/hint}}{{/error}}
+                {{#error}} aria-describedby="passportNationality-error " aria-invalid="true"{{/error}}>
+        Yes
+    </label>
+    <label class="block-label" for="passportNationality-No">
+        <input type="radio" name="passportNationality" id="passportNationality-No" value="No" aria-required="true">
+        No
+    </label>
+</fieldset>
+
+{{#input-submit}}continue{{/input-submit}}
+{{/form}}
+
+{{/partials-form}}
+
+{{/content}}
+
+{{/layout}}

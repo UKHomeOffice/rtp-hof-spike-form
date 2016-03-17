@@ -3,10 +3,10 @@
 module.exports = {
   '/': {
     controller: require('../common/controllers/start'),
-    next: '/first-page'
+    next: '/passportNationality'
   },
-  '/first-page': {
-    template: 'first-page',
+  '/passportNationality': {
+    template: 'passportNationality',
     fields: [
       'passportNationality'
     ],
@@ -31,20 +31,20 @@ module.exports = {
       target: '/exit-page',
       condition: {
         field: 'criminalConviction',
-        value: 'No'
+        value: 'Yes'
       }
     }, {
       target: '/exit-page',
       condition: {
         field: 'refusedEntry',
-        value: 'No'
+        value: 'Yes'
       }
     },
       {
         target: '/exit-page',
         condition: {
           field: 'customsPenalties',
-          value: 'No'
+          value: 'Yes'
         }
       }
     ]

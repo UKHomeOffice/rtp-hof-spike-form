@@ -3,7 +3,7 @@
 var _ = require('underscore');
 
 module.exports = _.extend(
-  require('./first-page'),
+  require('./passportNationality'),
   require('./restrictions'),
   require('./third-page'),
   require('./fourth-page'),
