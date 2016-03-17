@@ -1,0 +1,27 @@
+<fieldset id="{{key}}-group" class="{{#className}}{{className}}{{/className}} {{#error}}validation-error{{/error}}">
+    <legend>
+        {{#error}}<span id="{{key}}-error" class="error-message">{{error.message}}</span>{{/error}}
+        <span{{#legendClassName}} class="{{legendClassName}}"{{/legendClassName}}>{{legend}}</span>
+        <!-- {{#hint}}<span id="{{key}}-hint" class="form-hint">{{hint}}</span>{{/hint}} -->
+
+        <span id="nationality-question" class="heading-medium">Are you a British Citizen?</span>
+        <span id="nationality-hint" class="newLine">You can only register if it says ‘British
+        citizen’ in the nationality section of your passport.</span>
+    </legend>
+    {{#options}}
+        <label class="block-label" for="{{key}}-{{value}}">
+            <input
+                type="radio"
+                name="{{key}}"
+                id="{{key}}-{{value}}"
+                value="{{value}}"
+                aria-required="true"
+                {{#toggle}} data-toggle="{{toggle}}"{{/toggle}}
+                {{#selected}} checked="checked"{{/selected}}
+                {{^error}}{{#hint}} aria-describedby="{{key}}-hint"{{/hint}}{{/error}}
+                {{#error}} aria-describedby="{{key}}-error" aria-invalid="true"{{/error}}
+            >
+            {{{label}}}
+        </label>
+    {{/options}}
+</fieldset>

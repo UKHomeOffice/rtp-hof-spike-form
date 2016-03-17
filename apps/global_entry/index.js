@@ -16,7 +16,8 @@ var i18n = i18nFuture({
 });
 
 router.use(mixins(fields, {
-  translate: i18n.translate.bind(i18n)
+  translate: i18n.translate.bind(i18n),
+  viewsDirectory: path.resolve(__dirname, '../common/template-mixins')
 }));
 
 router.use('/register-to-apply/', wizard(require('./steps'), fields, {
